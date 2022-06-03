@@ -1,0 +1,548 @@
+fileFormatVersion: 2
+guid: 5dc2ddb27051e3c4cbc1804add8810d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1365357312772692955
+    second: MP18Atlas_0
+  - first:
+      213: 3576151143238133747
+    second: MP18Atlas_1
+  - first:
+      213: 665244641159903478
+    second: MP18Atlas_2
+  - first:
+      213: 9219023839823063168
+    second: MP18Atlas_3
+  - first:
+      213: -8248656579327514797
+    second: MP18Atlas_4
+  - first:
+      213: -3698040551526247609
+    second: MP18Atlas_5
+  - first:
+      213: 5805061156564595545
+    second: MP18Atlas_6
+  - first:
+      213: 7658182019710148075
+    second: MP18Atlas_7
+  - first:
+      213: -3370247907326652806
+    second: MP18Atlas_8
+  - first:
+      213: 7240039339761652025
+    second: MP18Atlas_9
+  - first:
+      213: -5678795853019805814
+    second: MP18Atlas_10
+  - first:
+      213: -7813640570354026797
+    second: MP18Atlas_11
+  - first:
+      213: -4427799490580222726
+    second: MP18Atlas_12
+  - first:
+      213: 3241406641092067530
+    second: MP18Atlas_13
+  - first:
+      213: -2280268550725493982
+    second: MP18Atlas_14
+  - first:
+      213: 993302396537088909
+    second: MP18Atlas_15
+  - first:
+      213: -6665916386136727838
+    second: MP18Atlas_16
+  - first:
+      213: -4145528868047996743
+    second: MP18Atlas_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 15
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MP18Atlas_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 49
+        width: 38
+        height: 14
+      alignment: 9
+      pivot: {x: 0.1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524a3bc02c64d0de0800000000000000
+      internalID: -1365357312772692955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP18Atlas_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 49
+        width: 38
+        height: 14
+      alignment: 9
+      pivot: {x: 0.1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7e0db748a01a130800000000000000
+      internalID: 3576151143238133747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP18Atlas_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 49
+        width: 38
+        height: 15
+      alignment: 9
+      pivot: {x: 0.1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8711df97c6b3900800000000000000
+      internalID: 665244641159903478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP18Atlas_3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 49
+        width: 38
+        height: 15
+      alignment: 9
+      pivot: {x: 0.1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088e28c765d80ff70800000000000000
+      internalID: 9219023839823063168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP18Atlas_4
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 49
+        width: 38
+        height: 15
+      alignment: 9
+      pivot: {x: 0.1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357aefa5b82e68d80800000000000000
+      internalID: -8248656579327514797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP18Atlas_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 33
+        width: 38
+        height: 14
+      alignment: 9
+      pivot: {x: 0.1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743d94126bbedacc0800000000000000
+      internalID: -3698040551526247609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP18Atlas_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 33
+        width: 38
+        height: 13
+      alignment: 9
+      pivot: {x: 0.1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95373788d58bf8050800000000000000
+      internalID: 5805061156564595545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP18Atlas_7
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 33
+        width: 38
+        height: 13
+      alignment: 9
+      pivot: {x: 0.1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed5b1ed8f3574a60800000000000000
+      internalID: 7658182019710148075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP18Atlas_8
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 32
+        width: 39
+        height: 14
+      alignment: 9
+      pivot: {x: 0.1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e8ac672697a31d0800000000000000
+      internalID: -3370247907326652806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP18Atlas_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 17
+        width: 41
+        height: 14
+      alignment: 9
+      pivot: {x: 0.1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931d85e8b69c97460800000000000000
+      internalID: 7240039339761652025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP18Atlas_10
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 17
+        width: 42
+        height: 15
+      alignment: 9
+      pivot: {x: 0.1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a870bcc524dd031b0800000000000000
+      internalID: -5678795853019805814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP18Atlas_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 45
+        height: 16
+      alignment: 9
+      pivot: {x: 0.1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6b779bc4f509390800000000000000
+      internalID: -7813640570354026797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP18Atlas_12
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 16
+        width: 43
+        height: 16
+      alignment: 9
+      pivot: {x: 0.1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc6f43a2db4d82c0800000000000000
+      internalID: -4427799490580222726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP18Atlas_13
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 16
+        width: 45
+        height: 16
+      alignment: 9
+      pivot: {x: 0.1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac082e69a2acbfc20800000000000000
+      internalID: 3241406641092067530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP18Atlas_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 43
+        height: 16
+      alignment: 9
+      pivot: {x: 0.1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b1381a5dbda50e0800000000000000
+      internalID: -2280268550725493982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP18Atlas_15
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1
+        width: 47
+        height: 15
+      alignment: 9
+      pivot: {x: 0.1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b2324544be8cd00800000000000000
+      internalID: 993302396537088909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP18Atlas_16
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1
+        width: 47
+        height: 15
+      alignment: 9
+      pivot: {x: 0.1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee5dd54d58ed73a0800000000000000
+      internalID: -6665916386136727838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP18Atlas_17
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 7
+        width: 2
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b83fdd557f1876c0800000000000000
+      internalID: -4145528868047996743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,548 @@
+fileFormatVersion: 2
+guid: 9b2fc1077252ef242a2d916ea31b2cc7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8604154177146193072
+    second: KnifeEnemy_0
+  - first:
+      213: -741013241622208791
+    second: KnifeEnemy_1
+  - first:
+      213: -3847891849707324980
+    second: KnifeEnemy_2
+  - first:
+      213: 3805003136707834773
+    second: KnifeEnemy_3
+  - first:
+      213: -4888276761442780096
+    second: KnifeEnemy_4
+  - first:
+      213: -1388496767351535450
+    second: KnifeEnemy_5
+  - first:
+      213: -6313635445193948346
+    second: KnifeEnemy_6
+  - first:
+      213: -8350508064730927636
+    second: KnifeEnemy_7
+  - first:
+      213: -2584488638837816247
+    second: KnifeEnemy_8
+  - first:
+      213: 9076115155794041090
+    second: KnifeEnemy_9
+  - first:
+      213: 4810515437851051881
+    second: KnifeEnemy_10
+  - first:
+      213: 1606604242878309362
+    second: KnifeEnemy_11
+  - first:
+      213: -8306583982931721239
+    second: KnifeEnemy_12
+  - first:
+      213: -2597946853833263809
+    second: KnifeEnemy_13
+  - first:
+      213: -1527987217193972598
+    second: KnifeEnemy_14
+  - first:
+      213: -7698601890785275750
+    second: KnifeEnemy_15
+  - first:
+      213: -7600725668690462357
+    second: KnifeEnemy_16
+  - first:
+      213: 5976355515131355853
+    second: KnifeEnemy_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 15
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KnifeEnemy_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 64
+        width: 25
+        height: 47
+      alignment: 9
+      pivot: {x: 0.35999998, y: 0.5531915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05bf186dc57e79880800000000000000
+      internalID: -8604154177146193072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeEnemy_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 64
+        width: 25
+        height: 46
+      alignment: 9
+      pivot: {x: 0.35999998, y: 0.5652174}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee5f3ff16467b5f0800000000000000
+      internalID: -741013241622208791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeEnemy_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 64
+        width: 25
+        height: 46
+      alignment: 9
+      pivot: {x: 0.35999998, y: 0.5652174}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9f21cefba899ac0800000000000000
+      internalID: -3847891849707324980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeEnemy_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 64
+        width: 25
+        height: 48
+      alignment: 9
+      pivot: {x: 0.35999998, y: 0.5416667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593b7bc61361ec430800000000000000
+      internalID: 3805003136707834773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeEnemy_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 64
+        width: 25
+        height: 47
+      alignment: 9
+      pivot: {x: 0.35999998, y: 0.5531915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04cf7664f2a592cb0800000000000000
+      internalID: -4888276761442780096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeEnemy_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 93
+        width: 20
+        height: 18
+      alignment: 9
+      pivot: {x: 0.15, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8cb32fb811bbce0800000000000000
+      internalID: -1388496767351535450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeEnemy_6
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 90
+        width: 23
+        height: 21
+      alignment: 9
+      pivot: {x: 0.21739131, y: 0.71428573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64346ef73067168a0800000000000000
+      internalID: -6313635445193948346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeEnemy_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 92
+        width: 22
+        height: 19
+      alignment: 9
+      pivot: {x: 0.3181818, y: 0.8947368}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cedada378290d1c80800000000000000
+      internalID: -8350508064730927636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeEnemy_8
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 65
+        width: 24
+        height: 18
+      alignment: 9
+      pivot: {x: 0.20833334, y: 0.8333333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9440a04b64d022cd0800000000000000
+      internalID: -2584488638837816247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeEnemy_9
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 65
+        width: 27
+        height: 15
+      alignment: 9
+      pivot: {x: 0.11111111, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20994a995a6d4fd70800000000000000
+      internalID: 9076115155794041090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeEnemy_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 32
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57142854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96705a3bd4262c240800000000000000
+      internalID: 4810515437851051881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeEnemy_11
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 23
+        height: 48
+      alignment: 9
+      pivot: {x: 0.30434784, y: 0.5833334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3a567fb0ecb4610800000000000000
+      internalID: 1606604242878309362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeEnemy_12
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 22
+        height: 49
+      alignment: 9
+      pivot: {x: 0.27272728, y: 0.57142854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3c760b0e519bc80800000000000000
+      internalID: -8306583982931721239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeEnemy_13
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 31
+        height: 48
+      alignment: 9
+      pivot: {x: 0.41935483, y: 0.5833334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35bce7d91d32fbd0800000000000000
+      internalID: -2597946853833263809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeEnemy_14
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 29
+        height: 49
+      alignment: 9
+      pivot: {x: 0.44827586, y: 0.57142854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8cc0d9b8bf7bcae0800000000000000
+      internalID: -1527987217193972598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeEnemy_15
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 0
+        width: 22
+        height: 48
+      alignment: 9
+      pivot: {x: 0.27272728, y: 0.5833334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90d7988e52192590800000000000000
+      internalID: -7698601890785275750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeEnemy_16
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 0
+        width: 28
+        height: 49
+      alignment: 9
+      pivot: {x: 0.42857146, y: 0.57142854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69f282564cc48690800000000000000
+      internalID: -7600725668690462357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnifeEnemy_17
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 30
+        height: 48
+      alignment: 9
+      pivot: {x: 0.40000004, y: 0.5833334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2e9da4da740f250800000000000000
+      internalID: 5976355515131355853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
