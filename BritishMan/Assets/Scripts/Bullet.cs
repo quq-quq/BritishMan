@@ -31,13 +31,13 @@ public class Bullet : MonoBehaviour
             {
                 if (hitInfo.collider.CompareTag("Enemy"))
                 {
-                    Instantiate(effects, transform.position, Quaternion.identity);
                     hitInfo.collider.GetComponent<Enemy>().TakeDamage(damage);
+                    Instantiate(effects, transform.position, Quaternion.identity);
                 }
                 if (hitInfo.collider.CompareTag("Player") && enemyBullet)
                 {
-                    Instantiate(effects, transform.position, Quaternion.identity);
                     hitInfo.collider.GetComponent<Health>().TakeDamage(damage);
+                    Instantiate(effects, transform.position, Quaternion.identity);
                 }
                 DestroyBullet();
             }
@@ -48,15 +48,28 @@ public class Bullet : MonoBehaviour
     public void DestroyBullet()
     {         
         Destroy(gameObject);
+        Instantiate(effects, transform.position, Quaternion.identity);
     }
 
     private void OnTriggerEnter2D(Collider2D collision) //
     {
-        if (collision.CompareTag("Enemy") && typeOfBullet == TypeOfBullet.close)
+        if (enemyBullet)
         {
-            collision.gameObject.GetComponent<Enemy>().TakeDamage(damage);
-            DestroyBullet();
+            if (collision.CompareTag("Player") && typeOfBullet == TypeOfBullet.close)
+            {
+                collision.gameObject.GetComponent<Health>().TakeDamage(damage);
+                DestroyBullet();
+                Instantiate(effects, transform.position, Quaternion.identity);
+            }
         }
-
+        else
+        {
+            if (collision.CompareTag("Enemy") && typeOfBullet == TypeOfBullet.close)
+            {
+                collision.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+                DestroyBullet();
+                Instantiate(effects, transform.position, Quaternion.identity);
+            }
+        }
     }
 }

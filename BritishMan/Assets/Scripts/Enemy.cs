@@ -6,7 +6,9 @@ public class Enemy : MonoBehaviour
 {
     public int health;
     public float speed;
-      
+    public GameObject gun;
+    
+    GameObject player;     
     Animator anim;
 
     public enum TypeOfEnemy { knife , dummy };
@@ -15,6 +17,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        player = GameObject.Find("Player");
     }
 
     void Update()
@@ -25,7 +28,8 @@ public class Enemy : MonoBehaviour
         }
         if(typeOfEnemy != TypeOfEnemy.dummy)
         {
-          ///  transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+          transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+            Flip();
         }
     }
 
@@ -34,4 +38,17 @@ public class Enemy : MonoBehaviour
         health -= damage;
     }
 
+    void Flip()
+    {
+        if(transform.position.x < player.transform.position.x)
+        {
+            transform.eulerAngles = new Vector2(0, 0);
+            gun.transform.localScale = new Vector2(1, 1);
+        }
+        else if (transform.position.x > player.transform.position.x)
+        {
+            transform.eulerAngles = new Vector2(0, 180);
+            gun.transform.localScale = new Vector2(1, -1);
+        }
+    }
 }
