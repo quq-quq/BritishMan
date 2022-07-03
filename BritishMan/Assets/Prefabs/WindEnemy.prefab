@@ -140,6 +140,7 @@ MonoBehaviour:
   isSolid:
     serializedVersion: 2
     m_Bits: 256
-  effects: {fileID: 5325932594953653404, guid: b9b491940390ca244830629e20888155, type: 3}
-  effectsBlood: {fileID: 0}
+  effects: {fileID: 5225819855836919496, guid: 7f6df036c8409f447bf3ee8a4f935673, type: 3}
+  effectsBlood: {fileID: 5325932594953653404, guid: b9b491940390ca244830629e20888155,
+    type: 3}
   typeOfBullet: 1

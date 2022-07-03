@@ -9,12 +9,13 @@ public class Bullet : MonoBehaviour
 
     public float speed, lifetime, distance;
     public int damage, rotateUp, rotateDown;
-
     public LayerMask isSolid;
     public GameObject effects, effectsBlood;
 
     public enum TypeOfBullet { far, close };
     public TypeOfBullet typeOfBullet;
+
+    bool isEfeccts;
 
     private void Start()
     {
@@ -32,26 +33,31 @@ public class Bullet : MonoBehaviour
                 if (hitInfo.collider.CompareTag("Enemy"))
                 {
                     hitInfo.collider.GetComponent<Enemy>().TakeDamage(damage);
-                    Instantiate(effects, transform.position, Quaternion.identity);
+                    Instantiate(effectsBlood, transform.position, Quaternion.identity);
                 }
                 if (hitInfo.collider.CompareTag("Player") && enemyBullet)
                 {
                     hitInfo.collider.GetComponent<Health>().TakeDamage(damage);
-                    Instantiate(effects, transform.position, Quaternion.identity);
+                    Instantiate(effectsBlood, transform.position, Quaternion.identity);
                 }
+                isEfeccts = true;
                 DestroyBullet();
             }
         }
         transform.Translate(Vector2.right * speed * Time.deltaTime);
+
+        if (lifetime == 0)
+        {
+            Instantiate(effects, transform.position, Quaternion.identity);
+        }
     }
 
     public void DestroyBullet()
     {         
         Destroy(gameObject);
-        Instantiate(effects, transform.position, Quaternion.identity);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision) //
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (enemyBullet)
         {
@@ -59,7 +65,7 @@ public class Bullet : MonoBehaviour
             {
                 collision.gameObject.GetComponent<Health>().TakeDamage(damage);
                 DestroyBullet();
-                Instantiate(effects, transform.position, Quaternion.identity);
+                Instantiate(effectsBlood, transform.position, Quaternion.identity);
             }
         }
         else
@@ -67,9 +73,10 @@ public class Bullet : MonoBehaviour
             if (collision.CompareTag("Enemy") && typeOfBullet == TypeOfBullet.close)
             {
                 collision.gameObject.GetComponent<Enemy>().TakeDamage(damage);
-                DestroyBullet();
-                Instantiate(effects, transform.position, Quaternion.identity);
+                Instantiate(effectsBlood, transform.position, Quaternion.identity);
             }
         }
+
+        isEfeccts = true;
     }
 }

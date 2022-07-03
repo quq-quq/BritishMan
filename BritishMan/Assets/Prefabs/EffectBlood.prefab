@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3552899552056054280}
   - component: {fileID: 2049517956105606265}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: EffectBlood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -600,7 +600,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 20
     size3D: 0
     rotation3D: 0
     gravityModifier:

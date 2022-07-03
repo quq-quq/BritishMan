@@ -97,17 +97,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e73b4a51f943fc4daefe5e5d7f843c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyBullet: 0
   speed: 20
-  lifetime: 1
+  lifetime: 0.5
   distance: 0.5
   damage: 1
   rotateUp: 15
   rotateDown: -15
-  bulletType: 
   isSolid:
     serializedVersion: 2
     m_Bits: 256
-  effects: {fileID: 5325932594953653404, guid: b9b491940390ca244830629e20888155, type: 3}
+  effects: {fileID: 5225819855836919496, guid: 7f6df036c8409f447bf3ee8a4f935673, type: 3}
+  effectsBlood: {fileID: 5325932594953653404, guid: b9b491940390ca244830629e20888155,
+    type: 3}
+  typeOfBullet: 0
 --- !u!108 &9015524538824957114
 Light:
   m_ObjectHideFlags: 0

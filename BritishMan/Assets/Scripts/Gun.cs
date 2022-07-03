@@ -11,7 +11,7 @@ public class Gun : MonoBehaviour
     public int curretAmmo, allAmmo;
     public float offset, startShotTime, timeReload;
 
-    public GameObject bullet, buttonReload;
+    public GameObject bullet, buttonReload, onFloor;
     public Transform shotPoint;
     public Joystick joystick;
 
@@ -31,8 +31,7 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-
-        if(typeOfGun == TypeOfGun.close)
+        if (typeOfGun == TypeOfGun.close)
         {
             buttonReload.SetActive(false);
             ammoCount.gameObject.SetActive(false);
@@ -41,7 +40,7 @@ public class Gun : MonoBehaviour
         {
             buttonReload.SetActive(true);
             ammoCount.gameObject.SetActive(true);
-            ammoCount.text = "Bullets: " + curretAmmo + "/" + allAmmo;
+            ammoCount.text = curretAmmo + "/" + allAmmo;
         }
        
 
@@ -121,6 +120,12 @@ public class Gun : MonoBehaviour
     {
         yield return new WaitForSeconds(timeReload);
         isReload = false;
+    }
+
+    public void DropGun()
+    {
+        Instantiate(onFloor, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }
 
