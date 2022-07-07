@@ -10,16 +10,16 @@ public class Bullet : MonoBehaviour
     public float speed, lifetime, distance;
     public int damage, rotateUp, rotateDown;
     public LayerMask isSolid;
-    public GameObject effects, effectsBlood;
+    public GameObject effectsBlood, dust;
 
     public enum TypeOfBullet { far, close };
     public TypeOfBullet typeOfBullet;
-
-    bool isEfeccts;
+    
 
     private void Start()
     {
         Invoke("DestroyBullet", lifetime);
+        Invoke("EffectPlay", lifetime);
         transform.Rotate(transform.rotation.x, transform.rotation.y, Random.Range(rotateDown, rotateUp));
     }
 
@@ -30,31 +30,38 @@ public class Bullet : MonoBehaviour
             RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.right, distance, isSolid);
             if (hitInfo.collider != null)
             {
-                if (hitInfo.collider.CompareTag("Enemy"))
+                if (hitInfo.collider.gameObject.isStatic)
+                {
+                    EffectPlay();
+                }
+                else if (hitInfo.collider.CompareTag("Enemy"))
                 {
                     hitInfo.collider.GetComponent<Enemy>().TakeDamage(damage);
                     Instantiate(effectsBlood, transform.position, Quaternion.identity);
                 }
+ 
                 if (hitInfo.collider.CompareTag("Player") && enemyBullet)
                 {
                     hitInfo.collider.GetComponent<Health>().TakeDamage(damage);
                     Instantiate(effectsBlood, transform.position, Quaternion.identity);
                 }
-                isEfeccts = true;
+
                 DestroyBullet();
             }
         }
         transform.Translate(Vector2.right * speed * Time.deltaTime);
 
-        if (lifetime == 0)
-        {
-            Instantiate(effects, transform.position, Quaternion.identity);
-        }
     }
 
     public void DestroyBullet()
     {         
         Destroy(gameObject);
+    }
+
+    public void EffectPlay()
+    {
+        Instantiate(dust, transform.position, transform.rotation);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -76,7 +83,5 @@ public class Bullet : MonoBehaviour
                 Instantiate(effectsBlood, transform.position, Quaternion.identity);
             }
         }
-
-        isEfeccts = true;
     }
 }

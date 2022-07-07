@@ -15,7 +15,7 @@ public class Gun : MonoBehaviour
     public Transform shotPoint;
     public Joystick joystick;
 
-    int startAmmo;
+    int startAmmo, allClip, maxClip;
     float shotTime;
     bool isReload;
     Animator anim;
@@ -27,6 +27,10 @@ public class Gun : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         startAmmo = curretAmmo;
+        curretAmmo = 0;
+        if (typeOfGun == TypeOfGun.far)
+            maxClip = allAmmo / startAmmo;
+        allClip = maxClip;
     }
 
     void Update()
@@ -40,7 +44,7 @@ public class Gun : MonoBehaviour
         {
             buttonReload.SetActive(true);
             ammoCount.gameObject.SetActive(true);
-            ammoCount.text = curretAmmo + "/" + allAmmo;
+            ammoCount.text = allClip + "/" + maxClip;
         }
        
 
@@ -60,7 +64,7 @@ public class Gun : MonoBehaviour
             shotTime -= Time.deltaTime;
         }
 
-        if ((joystick.Horizontal != 0 || joystick.Vertical != 0) && curretAmmo == 0 && typeOfGun == TypeOfGun.far)
+        if ((joystick.Horizontal != 0 || joystick.Vertical != 0) && curretAmmo == 0 && typeOfGun == TypeOfGun.far && isReload == false)
         {
             ReloadAnim();
         }
@@ -73,9 +77,10 @@ public class Gun : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("GunClip") && typeOfGun == TypeOfGun.far)
+        if (collision.CompareTag("GunClip") && typeOfGun == TypeOfGun.far && allClip < maxClip)
         {
             allAmmo += startAmmo;
+            allClip++;
             Destroy(collision.gameObject);
         }
 
@@ -93,17 +98,9 @@ public class Gun : MonoBehaviour
 
     public void Reload()
     {
-        int reason = startAmmo - curretAmmo;
-        if(allAmmo >= reason)
-        {
-            allAmmo -= reason;
-            curretAmmo += reason;
-        }
-        else
-        {
-            curretAmmo += allAmmo;
-            allAmmo = 0;
-        }
+        allAmmo -= startAmmo;
+        curretAmmo = startAmmo;
+        allClip--;
     }
 
     public void ReloadAnim()
@@ -112,7 +109,10 @@ public class Gun : MonoBehaviour
         {
             anim.SetTrigger("IsReloading");
             isReload = true;
+            buttonReload.GetComponent<Button>().enabled = false;
             StartCoroutine(ReloadMoment());
+            
+
         }
     }
 
@@ -120,12 +120,13 @@ public class Gun : MonoBehaviour
     {
         yield return new WaitForSeconds(timeReload);
         isReload = false;
+        buttonReload.GetComponent<Button>().enabled = true;
     }
 
-    public void DropGun()
-    {
-        Instantiate(onFloor, transform.position, Quaternion.identity);
-        Destroy(gameObject);
-    }
+    //public void DropGun()
+    //{
+    //    Instantiate(onFloor, transform.position, Quaternion.identity);
+    //    Destroy(gameObject);
+    //}
 }
 

@@ -21,7 +21,7 @@ public class CurrentItem : MonoBehaviour, IPointerClickHandler
         if (inventory.item[index].id != 0)
         {
             GameObject dropedobj = Instantiate(Resources.Load<GameObject>(inventory.item[index].pathPrefab));
-            dropedobj.transform.position = new Vector2(inventoryObj.transform.position.x + 4, inventoryObj.transform.position.y - 1);
+            dropedobj.transform.position = new Vector2(inventoryObj.transform.position.x + Random.Range(2, 4), inventoryObj.transform.position.y + Random.Range(-2, 2));
             if (inventory.item[index].count > 1)
                 inventory.item[index].count--;
             else

@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960047389683399659}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.955, y: 0.204, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -4145528868047996743, guid: 5dc2ddb27051e3c4cbc1804add8810d0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -110,6 +110,7 @@ MonoBehaviour:
   effects: {fileID: 5225819855836919496, guid: 7f6df036c8409f447bf3ee8a4f935673, type: 3}
   effectsBlood: {fileID: 5325932594953653404, guid: b9b491940390ca244830629e20888155,
     type: 3}
+  dust: {fileID: 1261883371968192571, guid: 90a444b9b4fcafe4da856168824545fe, type: 3}
   typeOfBullet: 0
 --- !u!108 &9015524538824957114
 Light:

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - GunClip
+  - Static
   layers:
   - Default
   - TransparentFX

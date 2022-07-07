@@ -6,9 +6,8 @@ using UnityEngine;
 public class Pause : MonoBehaviour
 {
     public static bool gamePaused = false;
-    public Sprite aaaaa;
 
-    public GameObject PauseUi, PauseButton;
+    public GameObject PauseUi, PauseButton, moreButtons;
     private void Start()
     {
         Resume();
@@ -20,6 +19,7 @@ public class Pause : MonoBehaviour
         Time.timeScale = 1f;
         gamePaused = false;
         PauseButton.SetActive(true);
+        moreButtons.SetActive(true);
     }
 
     public void PauseMod()
@@ -28,5 +28,6 @@ public class Pause : MonoBehaviour
         Time.timeScale = 0f;
         gamePaused = true;
         PauseButton.SetActive(false);
+        moreButtons.SetActive(false);
     }
 }
