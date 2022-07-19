@@ -1,16 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Pause : MonoBehaviour
 {
-    public static bool gamePaused = false;
+    [SerializeField]
+    public bool gamePaused = false;
 
-    public GameObject PauseUi, PauseButton, moreButtons;
+    public GameObject PauseUi, PauseButton, moreButtons, cellContainer;
+    public Text des;
+
     private void Start()
     {
         Resume();
+    }
+
+    private void Update()
+    {
+
     }
 
     public void Resume()
@@ -20,6 +29,12 @@ public class Pause : MonoBehaviour
         gamePaused = false;
         PauseButton.SetActive(true);
         moreButtons.SetActive(true);
+        for(int i =0 ; i < cellContainer.transform.childCount; i++)
+        {
+            cellContainer.transform.GetChild(i).GetChild(1).gameObject.SetActive(false);
+            cellContainer.transform.GetChild(i).GetComponent<CurrentItem>().onoff = false;
+        }
+        des.text = null;
     }
 
     public void PauseMod()

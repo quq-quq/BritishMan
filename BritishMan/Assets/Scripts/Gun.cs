@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class Gun : MonoBehaviour
+
+public class Gun : MonoBehaviour, IPointerDownHandler
 {
     public enum TypeOfGun {far, close};
     public TypeOfGun typeOfGun;
@@ -11,23 +13,29 @@ public class Gun : MonoBehaviour
     public int curretAmmo, allAmmo;
     public float offset, startShotTime, timeReload;
 
-    public GameObject bullet, buttonReload, onFloor;
+    public GameObject bullet;
     public Transform shotPoint;
-    public Joystick joystick;
 
     int startAmmo, allClip, maxClip;
     float shotTime;
-    bool isReload;
     Animator anim;
-    
+    Joystick joystick;
+
     [SerializeField]
     private Text ammoCount;
 
+    [HideInInspector]
+    public bool isReload;
+    
     private void Start()
     {
+        joystick = GameObject.Find("Fixed Joystick (1)").GetComponent<FixedJoystick>();
+        ammoCount = GameObject.Find("Canvas").transform.GetChild(0).GetComponent<Text>();
         anim = GetComponent<Animator>();
+        
         startAmmo = curretAmmo;
-        curretAmmo = 0;
+        curretAmmo = 0;     
+
         if (typeOfGun == TypeOfGun.far)
             maxClip = allAmmo / startAmmo;
         allClip = maxClip;
@@ -37,12 +45,10 @@ public class Gun : MonoBehaviour
     {
         if (typeOfGun == TypeOfGun.close)
         {
-            buttonReload.SetActive(false);
             ammoCount.gameObject.SetActive(false);
         }
         else if (typeOfGun == TypeOfGun.far)
         {
-            buttonReload.SetActive(true);
             ammoCount.gameObject.SetActive(true);
             ammoCount.text = allClip + "/" + maxClip;
         }
@@ -66,7 +72,13 @@ public class Gun : MonoBehaviour
 
         if ((joystick.Horizontal != 0 || joystick.Vertical != 0) && curretAmmo == 0 && typeOfGun == TypeOfGun.far && isReload == false)
         {
-            ReloadAnim();
+            if (allAmmo > 0 && curretAmmo < startAmmo)
+            {
+                anim.SetTrigger("IsReloading");
+                isReload = true;
+                gameObject.GetComponent<Button>().enabled = false;
+                StartCoroutine(ReloadMoment());
+            }
         }
 
         if(curretAmmo == 0 && typeOfGun == TypeOfGun.far)
@@ -103,30 +115,20 @@ public class Gun : MonoBehaviour
         allClip--;
     }
 
-    public void ReloadAnim()
-    {
-        if(allAmmo > 0 && curretAmmo < startAmmo)
-        {
-            anim.SetTrigger("IsReloading");
-            isReload = true;
-            buttonReload.GetComponent<Button>().enabled = false;
-            StartCoroutine(ReloadMoment());
-            
-
-        }
-    }
-
     IEnumerator ReloadMoment()
     {
         yield return new WaitForSeconds(timeReload);
         isReload = false;
-        buttonReload.GetComponent<Button>().enabled = true;
     }
 
-    //public void DropGun()
-    //{
-    //    Instantiate(onFloor, transform.position, Quaternion.identity);
-    //    Destroy(gameObject);
-    //}
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        if (allAmmo > 0 && curretAmmo < startAmmo && isReload == false)
+        {
+            anim.SetTrigger("IsReloading");
+            isReload = true;
+            StartCoroutine(ReloadMoment());
+        }
+    }
 }
 

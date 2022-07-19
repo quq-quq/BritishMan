@@ -122,9 +122,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   naming: MP-18
-  description: trtrtrtrtrtrt
   pathItem: Ikons/Sprite-0001
   pathPrefab: Prefs/MP-18
   id: 1
   count: 1
   IsStack: 0
+  description: trtrtrtrtrt

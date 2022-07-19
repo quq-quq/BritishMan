@@ -6,6 +6,7 @@ public class SwitchWeapon : MonoBehaviour
 {
     public int weaponSwitch;
     public Joystick joystick;
+    public GameObject bulletsText;
 
     float rotZ;
 
@@ -22,37 +23,45 @@ public class SwitchWeapon : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, 0f, rotZ);
         }
 
-        int currentWeapon = weaponSwitch;
-        if(Input.GetAxis("Mouse ScrollWheel") > 0f)
+        if((gameObject.transform.GetChild(weaponSwitch).GetComponent<Gun>() && gameObject.transform.GetChild(weaponSwitch).GetComponent<Gun>().isReload == false) || weaponSwitch == 0)
         {
-            if(weaponSwitch >= transform.childCount - 1)
+            int currentWeapon = weaponSwitch;
+            if (Input.GetAxis("Mouse ScrollWheel") > 0f)
             {
-                weaponSwitch = 0;
-            }
-            else
-            {
-                weaponSwitch++;
+                if (weaponSwitch >= transform.childCount - 1)
+                {
+                    weaponSwitch = 0;
+                }
+                else
+                {
+                    weaponSwitch++;
+                }
+
             }
 
+            if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+            {
+                if (weaponSwitch <= 0)
+                {
+                    weaponSwitch = transform.childCount - 1;
+                }
+                else
+                {
+                    weaponSwitch--;
+                }
+
+            }
+
+
+            if (currentWeapon != weaponSwitch)
+            {
+                SelectWeapon();
+            }
         }
 
-        if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+        if (gameObject.transform.GetChild(0))
         {
-            if (weaponSwitch <= 0)
-            {
-                weaponSwitch = transform.childCount - 1;
-            }
-            else
-            {
-                weaponSwitch--;
-            }
-
-        }
-
-
-        if(currentWeapon != weaponSwitch)
-        {
-            SelectWeapon();
+            bulletsText.SetActive(false);
         }
     }
 
@@ -64,7 +73,9 @@ public class SwitchWeapon : MonoBehaviour
             if (i == weaponSwitch)
                 weapon.gameObject.SetActive(true);
             else
+            {
                 weapon.gameObject.SetActive(false);
+            }
             i++;
         }
     }

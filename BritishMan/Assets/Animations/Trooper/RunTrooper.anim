@@ -44,7 +44,7 @@ AnimationClip:
       value: {fileID: 7695906789665941573, guid: e28065de86cd32e4ca5a69a68aca4a67,
         type: 3}
     attribute: m_Sprite
-    path: idle alfha1
+    path: Body&Sprite
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 60
@@ -55,7 +55,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 2670229120
+      path: 1489056641
       attribute: 0
       script: {fileID: 0}
       typeID: 212

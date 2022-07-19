@@ -8,6 +8,7 @@ public class Inventory : MonoBehaviour
     [HideInInspector]
     public List<Item> item;
 
+    public Text description;
     public GameObject cellContainer;
 
     // Start is called before the first frame update
@@ -17,19 +18,13 @@ public class Inventory : MonoBehaviour
 
         for(int i = 0; i<cellContainer.transform.childCount; i++)
         {
-            cellContainer.transform.GetChild(i).GetComponent<CurrentItem>().index =i;
+            cellContainer.transform.GetChild(i).gameObject.GetComponent<CurrentItem>().index =i;
         }
 
         for (int i= 0; i < cellContainer.transform.childCount; i++)
         {
             item.Add(new Item());
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -98,8 +93,6 @@ public class Inventory : MonoBehaviour
                 {
                     txt.text = null;
                 }
-  
- 
             }
             else
             {

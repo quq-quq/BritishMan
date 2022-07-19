@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour
 {
     [SerializeField]
-    int health = 3;
+    public int health = 3;
 
     public GameObject partOfBody;
 
