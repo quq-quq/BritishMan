@@ -60,6 +60,13 @@ public class Inventory : MonoBehaviour
                         item[i] = collision.GetComponent<Item>();
                         DisplayItems();
                         Destroy(collision.GetComponent<Item>().gameObject);
+                        Transform switcher = gameObject.GetComponent<Transform>().GetChild(4);
+                        if (item[i].isGun == true)
+                        {
+                            GameObject activeGun = Instantiate(Resources.Load<GameObject>(item[i].pathGun), switcher.position, switcher.rotation, switcher);
+                            activeGun.SetActive(false);
+                            item[i].gunCount = switcher.childCount;
+                        }
                         break;
                         
                     }

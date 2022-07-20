@@ -29,7 +29,7 @@ public class Gun : MonoBehaviour, IPointerDownHandler
     
     private void Start()
     {
-        joystick = GameObject.Find("Fixed Joystick (1)").GetComponent<FixedJoystick>();
+        joystick = GameObject.Find("Canvas").transform.GetChild(4).GetChild(0).GetComponent<FixedJoystick>();
         ammoCount = GameObject.Find("Canvas").transform.GetChild(0).GetComponent<Text>();
         anim = GetComponent<Animator>();
         
@@ -45,11 +45,10 @@ public class Gun : MonoBehaviour, IPointerDownHandler
     {
         if (typeOfGun == TypeOfGun.close)
         {
-            ammoCount.gameObject.SetActive(false);
+            ammoCount.text = null;
         }
         else if (typeOfGun == TypeOfGun.far)
         {
-            ammoCount.gameObject.SetActive(true);
             ammoCount.text = allClip + "/" + maxClip;
         }
        
@@ -76,7 +75,6 @@ public class Gun : MonoBehaviour, IPointerDownHandler
             {
                 anim.SetTrigger("IsReloading");
                 isReload = true;
-                gameObject.GetComponent<Button>().enabled = false;
                 StartCoroutine(ReloadMoment());
             }
         }

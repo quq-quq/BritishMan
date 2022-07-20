@@ -117,6 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   buttons: {fileID: 8559965749723179573}
+  onoff: 0
 --- !u!114 &6529977573994738471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,12 +626,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2194264687097304516}
-        m_MethodName: 
+      - m_Target: {fileID: -5153753774280186610}
+        m_MethodName: Activate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

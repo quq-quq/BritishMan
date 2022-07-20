@@ -10,7 +10,6 @@ public class Pause : MonoBehaviour
     public bool gamePaused = false;
 
     public GameObject PauseUi, PauseButton, moreButtons, cellContainer;
-    public Text des;
 
     private void Start()
     {
@@ -34,7 +33,6 @@ public class Pause : MonoBehaviour
             cellContainer.transform.GetChild(i).GetChild(1).gameObject.SetActive(false);
             cellContainer.transform.GetChild(i).GetComponent<CurrentItem>().onoff = false;
         }
-        des.text = null;
     }
 
     public void PauseMod()

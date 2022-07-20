@@ -5,7 +5,7 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     public string pathItem, pathPrefab, pathGun;
-    public int id, count;
+    public int id, count, gunCount;
     public bool IsStack, isGun;
 
     [Multiline((5))]

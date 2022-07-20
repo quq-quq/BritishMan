@@ -14,16 +14,17 @@ public class CurrentItem : MonoBehaviour
 
     GameObject inventoryObj;
     Inventory inventory;
+    Transform switcher;
 
     private void Start()
     {
         inventoryObj = GameObject.FindGameObjectWithTag("Player");
         inventory = inventoryObj.GetComponent<Inventory>();
-        Transform switcher = inventoryObj.GetComponent<Transform>().GetChild(4);
-        int head = inventoryObj.GetComponent<Transform>().GetChild(0).GetComponent<Health>().health;
-        int body = inventoryObj.GetComponent<Transform>().GetChild(1).GetComponent<Health>().health;
-        int legs = inventoryObj.GetComponent<Transform>().GetChild(2).GetComponent<Health>().health;
-        
+        switcher =inventoryObj.GetComponent<Transform>().GetChild(4);
+        //int head = inventoryObj.GetComponent<Transform>().GetChild(0).GetComponent<Health>().health;
+        //int body = inventoryObj.GetComponent<Transform>().GetChild(1).GetComponent<Health>().health;
+        //int legs = inventoryObj.GetComponent<Transform>().GetChild(2).GetComponent<Health>().health;
+
     }
 
     private void Update()
@@ -77,12 +78,17 @@ public class CurrentItem : MonoBehaviour
                 inventory.item[index].count--;
             else
             {
+                if (inventory.item[index].isGun == true)
+                {
+                    switcher.GetComponent<SwitchWeapon>().weaponSwitch = 0;
+                    switcher.GetComponent<SwitchWeapon>().SelectWeapon();
+                    Destroy(switcher.GetChild(inventory.item[index].gunCount - 1).gameObject);
+                }
                 inventory.item[index] = new Item();
                 buttons.SetActive(false);
                 onoff = false;
                 inventory.description.text = null;
             }
-
 
             inventory.DisplayItems();
         }
@@ -90,5 +96,12 @@ public class CurrentItem : MonoBehaviour
 
     public void Activate()
     {
+
+        if (inventory.item[index].isGun == true)
+        {
+            switcher.GetComponent<SwitchWeapon>().weaponSwitch = inventory.item[index].gunCount - 1;
+            switcher.GetComponent<SwitchWeapon>().SelectWeapon();
+        }
+
     }
 }

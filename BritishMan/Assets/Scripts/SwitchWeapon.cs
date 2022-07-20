@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SwitchWeapon : MonoBehaviour
 {
     public int weaponSwitch;
     public Joystick joystick;
-    public GameObject bulletsText;
+    public Text bulletsText;
 
     float rotZ;
 
@@ -61,11 +62,11 @@ public class SwitchWeapon : MonoBehaviour
 
         if (gameObject.transform.GetChild(0))
         {
-            bulletsText.SetActive(false);
+            bulletsText.text = null;
         }
     }
 
-    void SelectWeapon()
+    public void SelectWeapon()
     {
         int i = 0;
         foreach(Transform weapon in transform)
