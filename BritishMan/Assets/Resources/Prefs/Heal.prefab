@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: c0cbee9af7d38264b90622b798e9d0c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -121,10 +121,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98ace4a44af813f449b6de8286e9cb2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  naming: Heal
-  description: ++++
   pathItem: Ikons/Heal
   pathPrefab: Prefs/Heal
   id: 3
   count: 1
   IsStack: 1
+  isGun: 0
+  description: ++++
+  gunActive: {fileID: 0}

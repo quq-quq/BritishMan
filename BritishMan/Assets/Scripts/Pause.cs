@@ -6,19 +6,26 @@ using UnityEngine.UI;
 
 public class Pause : MonoBehaviour
 {
-    [SerializeField]
-    public bool gamePaused = false;
+    public bool gamePaused = false, isReload = false;
 
     public GameObject PauseUi, PauseButton, moreButtons, cellContainer;
+    public Text smallBullet, bigBullet, shotGunBullet;
+
+    public int smallInt, bigInt, shotInt;
 
     private void Start()
     {
         Resume();
+        smallInt =64;
+        bigInt = 32;
+        shotInt = 16;        
     }
 
     private void Update()
     {
-
+        smallBullet.text = smallInt.ToString();
+        bigBullet.text = bigInt.ToString();
+        shotGunBullet.text = shotInt.ToString();
     }
 
     public void Resume()
@@ -37,10 +44,14 @@ public class Pause : MonoBehaviour
 
     public void PauseMod()
     {
-        PauseUi.SetActive(true);
-        Time.timeScale = 0f;
-        gamePaused = true;
-        PauseButton.SetActive(false);
-        moreButtons.SetActive(false);
+        if(isReload == false)
+        {
+            PauseUi.SetActive(true);
+            Time.timeScale = 0f;
+            gamePaused = true;
+            PauseButton.SetActive(false);
+            moreButtons.SetActive(false);
+        }
+
     }
 }

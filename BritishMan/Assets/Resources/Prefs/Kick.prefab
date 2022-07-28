@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 5a65fc5315239cb4fa65c6ba5bd7ed13, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -123,9 +123,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pathItem: Ikons/Sprite-0002
   pathPrefab: Prefs/Kick
-  pathGun: Guns/Cudgel
   id: 2
   count: 1
   IsStack: 0
   isGun: 1
   description: bla bla bla BOOM
+  gunActive: {fileID: 4006770344354854220, guid: a93d6da1ba26043439da92e65bf83311,
+    type: 3}

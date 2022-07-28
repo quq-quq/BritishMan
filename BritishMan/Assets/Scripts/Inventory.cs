@@ -25,6 +25,8 @@ public class Inventory : MonoBehaviour
         {
             item.Add(new Item());
         }
+
+        DisplayItems();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -60,12 +62,11 @@ public class Inventory : MonoBehaviour
                         item[i] = collision.GetComponent<Item>();
                         DisplayItems();
                         Destroy(collision.GetComponent<Item>().gameObject);
-                        Transform switcher = gameObject.GetComponent<Transform>().GetChild(4);
+                        Transform switcher = gameObject.GetComponent<Transform>().GetChild(2);
                         if (item[i].isGun == true)
                         {
-                            GameObject activeGun = Instantiate(Resources.Load<GameObject>(item[i].pathGun), switcher.position, switcher.rotation, switcher);
-                            activeGun.SetActive(false);
-                            item[i].gunCount = switcher.childCount;
+                            item[i].gunActive = Instantiate(item[i].gunActive, switcher.position, switcher.rotation, switcher);
+                            item[i].gunActive.SetActive(false);
                         }
                         break;
                         

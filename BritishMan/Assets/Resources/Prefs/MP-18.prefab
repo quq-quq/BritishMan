@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: fb9176c64b3c3da4ea8cbc6ca601aacb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -123,9 +123,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pathItem: Ikons/Sprite-0001
   pathPrefab: Prefs/MP-18
-  pathGun: Guns/gun_mp18
   id: 1
   count: 1
   IsStack: 0
   isGun: 1
   description: trtrtrtrtrt
+  gunActive: {fileID: 8264331918495911061, guid: 6c9c6eaf466fbf6438f62dc96a715238,
+    type: 3}

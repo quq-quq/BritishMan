@@ -7,53 +7,53 @@ using UnityEngine.EventSystems;
 
 public class Gun : MonoBehaviour, IPointerDownHandler
 {
-    public enum TypeOfGun {far, close};
+    public enum TypeOfGun {big, small, shotGun};
     public TypeOfGun typeOfGun;
 
-    public int curretAmmo, allAmmo;
-    public float offset, startShotTime, timeReload;
+    public int startAmmo;
+    public float startShotTime, timeReload;
+    public bool close;
 
     public GameObject bullet;
     public Transform shotPoint;
 
-    int startAmmo, allClip, maxClip;
     float shotTime;
+    Pause pause;
     Animator anim;
     Joystick joystick;
-
-    [SerializeField]
-    private Text ammoCount;
+    Slider bulletsPoint;
+    GameObject switcher;
 
     [HideInInspector]
     public bool isReload;
-    
+
+    public int curretAmmo;
+
     private void Start()
     {
-        joystick = GameObject.Find("Canvas").transform.GetChild(4).GetChild(0).GetComponent<FixedJoystick>();
-        ammoCount = GameObject.Find("Canvas").transform.GetChild(0).GetComponent<Text>();
+        joystick = GameObject.Find("Canvas").transform.GetChild(5).GetChild(0).GetComponent<FixedJoystick>();
+        bulletsPoint = GameObject.Find("Canvas").transform.GetChild(1).GetComponent<Slider>();
+        pause = GameObject.Find("Canvas").GetComponent<Pause>();
+        switcher = GameObject.Find("Switcher");
         anim = GetComponent<Animator>();
-        
-        startAmmo = curretAmmo;
-        curretAmmo = 0;     
 
-        if (typeOfGun == TypeOfGun.far)
-            maxClip = allAmmo / startAmmo;
-        allClip = maxClip;
+        curretAmmo = startAmmo;
+        bulletsPoint.minValue = 0;
+        if (close)
+            curretAmmo = 50;
+        if (!close)
+            curretAmmo = 0;
     }
 
     void Update()
     {
-        if (typeOfGun == TypeOfGun.close)
-        {
-            ammoCount.text = null;
-        }
-        else if (typeOfGun == TypeOfGun.far)
-        {
-            ammoCount.text = allClip + "/" + maxClip;
-        }
-       
+        bulletsPoint.gameObject.SetActive(true);
 
-        if (shotTime <= 0 && ((curretAmmo >0 && isReload == false) || typeOfGun == TypeOfGun.close))
+        bulletsPoint.maxValue = startAmmo;
+        bulletsPoint.value = curretAmmo;
+
+
+        if (shotTime <= 0 && ((curretAmmo >0 && isReload == false) || close && curretAmmo > 0))
         {
                 if (joystick.Horizontal != 0 || joystick.Vertical != 0)
                 {
@@ -69,62 +69,94 @@ public class Gun : MonoBehaviour, IPointerDownHandler
             shotTime -= Time.deltaTime;
         }
 
-        if ((joystick.Horizontal != 0 || joystick.Vertical != 0) && curretAmmo == 0 && typeOfGun == TypeOfGun.far && isReload == false)
+        if ((joystick.Horizontal != 0 || joystick.Vertical != 0) && curretAmmo == 0 && isReload == false)
         {
-            if (allAmmo > 0 && curretAmmo < startAmmo)
+            if (((pause.bigInt > 0 && typeOfGun == TypeOfGun.big) || (pause.smallInt > 0 && typeOfGun == TypeOfGun.small) || (pause.shotInt > 0 && typeOfGun == TypeOfGun.shotGun)) && curretAmmo < startAmmo && !close)
             {
                 anim.SetTrigger("IsReloading");
                 isReload = true;
+                pause.isReload = true;
                 StartCoroutine(ReloadMoment());
             }
         }
 
-        if(curretAmmo == 0 && typeOfGun == TypeOfGun.far)
+        if(curretAmmo <= 0)
         {
             anim.SetBool("IsShooting", false);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("GunClip") && typeOfGun == TypeOfGun.far && allClip < maxClip)
-        {
-            allAmmo += startAmmo;
-            allClip++;
-            Destroy(collision.gameObject);
-        }
-
-    }
 
     public void Shoot()
     {
         Instantiate(bullet, shotPoint.position, transform.rotation);
         shotTime = startShotTime;
         anim.SetBool("IsShooting", true);
-        if(typeOfGun == TypeOfGun.far)
-            curretAmmo -= 1;
+        curretAmmo -= 1;
 
     }
 
     public void Reload()
     {
-        allAmmo -= startAmmo;
-        curretAmmo = startAmmo;
-        allClip--;
+       int reason = startAmmo - curretAmmo;
+
+        if(typeOfGun == TypeOfGun.big)
+        {
+            if(pause.bigInt >= reason)
+            {
+                pause.bigInt -= reason;
+                curretAmmo = startAmmo;
+            }
+            else
+            {
+                curretAmmo += pause.bigInt;
+                pause.bigInt = 0;
+            }
+        }
+
+        if (typeOfGun == TypeOfGun.small)
+        {
+            if (pause.smallInt >= reason)
+            {
+                pause.smallInt -= reason;
+                curretAmmo = startAmmo;
+            }
+            else
+            {
+                curretAmmo += pause.smallInt;
+                pause.smallInt = 0;
+            }
+        }
+
+        if (typeOfGun == TypeOfGun.shotGun)
+        {
+            if (pause.shotInt >= reason)
+            {
+                pause.shotInt -= reason;
+                curretAmmo = startAmmo;
+            }
+            else
+            {
+                curretAmmo += pause.shotInt;
+                pause.shotInt = 0;
+            }
+        }
     }
 
     IEnumerator ReloadMoment()
     {
         yield return new WaitForSeconds(timeReload);
         isReload = false;
+        pause.isReload = false;
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (allAmmo > 0 && curretAmmo < startAmmo && isReload == false)
+        if (((pause.bigInt > 0 && typeOfGun == TypeOfGun.big) || (pause.smallInt > 0 && typeOfGun == TypeOfGun.small) || (pause.shotInt > 0 && typeOfGun == TypeOfGun.shotGun)) && curretAmmo < startAmmo && !close && !isReload)
         {
             anim.SetTrigger("IsReloading");
             isReload = true;
+            pause.isReload = true;
             StartCoroutine(ReloadMoment());
         }
     }

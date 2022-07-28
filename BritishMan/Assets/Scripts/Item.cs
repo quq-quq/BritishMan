@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    public string pathItem, pathPrefab, pathGun;
-    public int id, count, gunCount;
+    public string pathItem, pathPrefab;
+    public int id, count;
     public bool IsStack, isGun;
 
-    [Multiline((5))]
+    [Multiline((6))]
     public string description;
+
+    public GameObject gunActive;
+
 }

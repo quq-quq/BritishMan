@@ -5,18 +5,13 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField]
-    public int health = 3;
+    public int health = 2;
 
     public GameObject partOfBody;
 
-    void Start()
-    {
-    }
-
     void Update()
     {
-        if (health >= 2)
+        if (health == 2)
         {
             partOfBody.GetComponent<Image>().color = Color.white;
         }
@@ -33,5 +28,14 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        if (health < 0)
+            health = 0;
+    }
+
+    public void Regenerate()
+    {
+        health += Random.Range(1, 3);
+        if (health > 2)
+            health = 2;
     }
 }

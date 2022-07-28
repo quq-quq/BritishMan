@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 8264331918495911051}
   - component: {fileID: 8264331918495911050}
   - component: {fileID: 8264331918495911049}
-  - component: {fileID: 8264331918495911048}
+  - component: {fileID: -1656994093791579566}
   m_Layer: 0
   m_Name: gun_mp18
   m_TagString: Untagged
@@ -147,17 +147,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb08e953f6c6e0a4091bdf25ebd365bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typeOfGun: 0
-  curretAmmo: 31
-  allAmmo: 62
-  offset: 0
+  typeOfGun: 1
+  startAmmo: 31
   startShotTime: 0.1
   timeReload: 3
+  close: 0
   bullet: {fileID: 960047389683399659, guid: 739020979169a7a479fabbb9fbb6f47a, type: 3}
   shotPoint: {fileID: 8264331917074958710}
-  ammoCount: {fileID: 0}
   isReload: 0
---- !u!61 &8264331918495911048
+  curretAmmo: 0
+--- !u!61 &-1656994093791579566
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,7 +169,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.32766354, y: -0.18976045}
+  m_Offset: {x: 1.0400004, y: -0.18666664}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.1, y: 0.7}
@@ -181,5 +180,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5172026, y: 2.8013182}
+  m_Size: {x: 2.6, y: 0.93333334}
   m_EdgeRadius: 0
