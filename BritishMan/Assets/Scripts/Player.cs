@@ -9,11 +9,17 @@ public class Player : MonoBehaviour
     public GameObject sprite, guns;
     public Transform flipPoint, flipPointMain, playerPos;
 
-    float rotZ;
+    float rotZ;  
     Rigidbody2D rb;
     Vector2 moveInput, pos, moveVelocity;
     Animator anim;
     Camera main;
+
+    [SerializeField]
+    bool IsDamagingMind;
+
+    [SerializeField]
+    float mind = 100;
 
     public void Start()
     {
@@ -82,6 +88,12 @@ public class Player : MonoBehaviour
                 guns.transform.eulerAngles = new Vector3(0, 0, 0);
             }
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Gas"))
+            mind -= 5 * Time.deltaTime;
     }
 }
 

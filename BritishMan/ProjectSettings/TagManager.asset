@@ -5,8 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - GunClip
   - Static
+  - Gas
   layers:
   - Default
   - TransparentFX

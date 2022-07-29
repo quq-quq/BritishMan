@@ -16,7 +16,8 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        anim = GetComponent<Animator>();
+        if (typeOfEnemy != TypeOfEnemy.dummy)
+            anim = GetComponent<Animator>();
         player = GameObject.Find("Player");
     }
 
@@ -28,7 +29,8 @@ public class Enemy : MonoBehaviour
         }
         if(typeOfEnemy != TypeOfEnemy.dummy)
         {
-          transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+            anim.SetBool("IsKicking", true);
             Flip();
         }
     }
