@@ -1,0 +1,524 @@
+fileFormatVersion: 2
+guid: 2d546e387c2abb746a3a4030baa4676d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8099592053707563596
+    second: MP-18Enemy_0
+  - first:
+      213: -4458673842077639534
+    second: MP-18Enemy_1
+  - first:
+      213: 1867729295581874962
+    second: MP-18Enemy_2
+  - first:
+      213: -1449322022067142092
+    second: MP-18Enemy_3
+  - first:
+      213: -7794044760510071987
+    second: MP-18Enemy_4
+  - first:
+      213: 4030313383705075402
+    second: MP-18Enemy_5
+  - first:
+      213: 4799415750156542385
+    second: MP-18Enemy_6
+  - first:
+      213: 152245061295098848
+    second: MP-18Enemy_7
+  - first:
+      213: 6051707255129651970
+    second: MP-18Enemy_8
+  - first:
+      213: 2731671272145792449
+    second: MP-18Enemy_9
+  - first:
+      213: -558669894400644124
+    second: MP-18Enemy_10
+  - first:
+      213: -599098322171637041
+    second: MP-18Enemy_11
+  - first:
+      213: 5386500384385026464
+    second: MP-18Enemy_12
+  - first:
+      213: 8017560599097251742
+    second: MP-18Enemy_13
+  - first:
+      213: 3596422159793223693
+    second: MP-18Enemy_14
+  - first:
+      213: 4204126605169006382
+    second: MP-18Enemy_15
+  - first:
+      213: -7492013234221551674
+    second: MP-18Enemy_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 15
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MP-18Enemy_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 33
+        width: 31
+        height: 47
+      alignment: 9
+      pivot: {x: 0.48387095, y: 0.61702126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd1f2dc0f7789f80800000000000000
+      internalID: -8099592053707563596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP-18Enemy_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 33
+        width: 22
+        height: 47
+      alignment: 9
+      pivot: {x: 0.27272728, y: 0.61702126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29cd2a183cb9f12c0800000000000000
+      internalID: -4458673842077639534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP-18Enemy_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 33
+        width: 21
+        height: 46
+      alignment: 9
+      pivot: {x: 0.2857143, y: 0.6304348}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b8fbf06e18be910800000000000000
+      internalID: 1867729295581874962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP-18Enemy_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 33
+        width: 31
+        height: 46
+      alignment: 9
+      pivot: {x: 0.41935483, y: 0.6304348}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432898dbc49f2ebe0800000000000000
+      internalID: -1449322022067142092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP-18Enemy_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 33
+        width: 28
+        height: 47
+      alignment: 9
+      pivot: {x: 0.42857146, y: 0.61702126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b7d4eb59df5d390800000000000000
+      internalID: -7794044760510071987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP-18Enemy_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 33
+        width: 20
+        height: 46
+      alignment: 9
+      pivot: {x: 0.3, y: 0.6304348}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace5e314bac8ee730800000000000000
+      internalID: 4030313383705075402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP-18Enemy_6
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 33
+        width: 28
+        height: 47
+      alignment: 9
+      pivot: {x: 0.39285716, y: 0.61702126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1ee754233fa9240800000000000000
+      internalID: 4799415750156542385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP-18Enemy_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 33
+        width: 30
+        height: 46
+      alignment: 9
+      pivot: {x: 0.40000004, y: 0.6304348}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb4d4d9312ec1200800000000000000
+      internalID: 152245061295098848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP-18Enemy_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 17
+        width: 41
+        height: 14
+      alignment: 9
+      pivot: {x: 0.09756097, y: 0.71428573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b38aa6fabfbf350800000000000000
+      internalID: 6051707255129651970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP-18Enemy_9
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 17
+        width: 42
+        height: 15
+      alignment: 9
+      pivot: {x: 0.071428575, y: 0.6666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cda36b8c88d8e520800000000000000
+      internalID: 2731671272145792449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP-18Enemy_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 45
+        height: 16
+      alignment: 9
+      pivot: {x: 0.08888889, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb6b85e0b43f38f0800000000000000
+      internalID: -558669894400644124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP-18Enemy_11
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 16
+        width: 43
+        height: 16
+      alignment: 9
+      pivot: {x: 0.069767445, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc25d6900439fa7f0800000000000000
+      internalID: -599098322171637041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP-18Enemy_12
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 16
+        width: 45
+        height: 16
+      alignment: 9
+      pivot: {x: 0.08888889, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a946c98f81b0ca40800000000000000
+      internalID: 5386500384385026464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP-18Enemy_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 43
+        height: 16
+      alignment: 9
+      pivot: {x: 0.069767445, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e971c52d2e8144f60800000000000000
+      internalID: 8017560599097251742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP-18Enemy_14
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1
+        width: 47
+        height: 15
+      alignment: 9
+      pivot: {x: 0.08510638, y: 0.6666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0871d056ee09e130800000000000000
+      internalID: 3596422159793223693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP-18Enemy_15
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1
+        width: 47
+        height: 15
+      alignment: 9
+      pivot: {x: 0.06382979, y: 0.6666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e271edb7fde085a30800000000000000
+      internalID: 4204126605169006382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MP-18Enemy_16
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1
+        width: 38
+        height: 14
+      alignment: 9
+      pivot: {x: 0.078947365, y: 0.71428573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfe2b968a5070890800000000000000
+      internalID: -7492013234221551674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

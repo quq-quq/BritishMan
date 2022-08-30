@@ -3,35 +3,8 @@ guid: 1d389abe14099f641bc50c2925f29b11
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9057444008558310320
-    second: Rifle_0
-  - first:
-      213: 7446731183550929329
-    second: Rifle_1
-  - first:
-      213: -8957083366528949100
-    second: Rifle_2
-  - first:
-      213: -4395390091276352567
-    second: Rifle_3
-  - first:
-      213: -6860543654216940503
-    second: Rifle_4
-  - first:
-      213: -1618686093085764431
-    second: Rifle_5
-  - first:
-      213: 1970950430010593850
-    second: Rifle_6
-  - first:
-      213: -7938312334150990956
-    second: Rifle_7
-  - first:
-      213: 316462503286705626
-    second: Rifle_8
-  - first:
-      213: 1797389872581509272
-    second: Rifle_9
+      213: -8635757434842801599
+    second: Rifle_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -73,7 +46,7 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
+  alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
@@ -133,7 +106,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 11
-        y: 147
+        y: 161
         width: 45
         height: 13
       alignment: 9
@@ -154,11 +127,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 11
-        y: 131
+        y: 143
         width: 50
-        height: 13
+        height: 15
       alignment: 9
-      pivot: {x: 0.06, y: 0.7692308}
+      pivot: {x: 0.099999994, y: 0.8000001}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,11 +148,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 115
+        y: 129
         width: 56
-        height: 16
+        height: 13
       alignment: 9
-      pivot: {x: 0.053571433, y: 0.625}
+      pivot: {x: 0.053571433, y: 0.7692308}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,7 +169,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 11
-        y: 99
+        y: 113
         width: 44
         height: 13
       alignment: 9
@@ -217,7 +190,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 11
-        y: 83
+        y: 97
         width: 44
         height: 10
       alignment: 9
@@ -238,7 +211,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 11
-        y: 67
+        y: 81
         width: 44
         height: 10
       alignment: 9
@@ -259,11 +232,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 11
-        y: 35
+        y: 49
         width: 45
-        height: 19
+        height: 13
       alignment: 9
-      pivot: {x: 0.06666667, y: 0.42105263}
+      pivot: {x: 0.06666667, y: 0.61538464}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,7 +253,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 11
-        y: 19
+        y: 33
         width: 44
         height: 13
       alignment: 9
@@ -301,7 +274,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 11
-        y: 3
+        y: 17
         width: 44
         height: 11
       alignment: 9
@@ -321,11 +294,11 @@ TextureImporter:
       name: Rifle_9
       rect:
         serializedVersion: 2
-        x: 19
-        y: 57
-        width: 3
-        height: 1
-      alignment: 0
+        x: 10
+        y: 6
+        width: 37
+        height: 6
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -334,6 +307,27 @@ TextureImporter:
       bones: []
       spriteID: 8900b1ee09c91f810800000000000000
       internalID: 1797389872581509272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rifle_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 72
+        width: 3
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a91c10e50a72880800000000000000
+      internalID: -8635757434842801599
       vertices: []
       indices: 
       edges: []

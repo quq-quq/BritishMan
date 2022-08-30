@@ -1,0 +1,452 @@
+fileFormatVersion: 2
+guid: c8b8ac995bbe2a34c9aba7ae3a2b1487
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4949291356794540364
+    second: Pistolet_0
+  - first:
+      213: 4307401763741957694
+    second: Pistolet_1
+  - first:
+      213: 6612029259405422506
+    second: Pistolet_2
+  - first:
+      213: 5007292068848734751
+    second: Pistolet_3
+  - first:
+      213: 729504042685021531
+    second: Pistolet_4
+  - first:
+      213: 6580139964916096177
+    second: Pistolet_5
+  - first:
+      213: -1963724088376162385
+    second: Pistolet_6
+  - first:
+      213: 2983287370888939639
+    second: Pistolet_7
+  - first:
+      213: 2223500557361222109
+    second: Pistolet_8
+  - first:
+      213: 2424147348178333443
+    second: Pistolet_9
+  - first:
+      213: -2858913023393528771
+    second: Pistolet_10
+  - first:
+      213: 1363984478280825357
+    second: Pistolet_11
+  - first:
+      213: 3866942845042958777
+    second: Pistolet_12
+  - first:
+      213: -5298124997300368026
+    second: Pistolet_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 15
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pistolet_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 98
+        width: 30
+        height: 13
+      alignment: 9
+      pivot: {x: 0.10000001, y: 0.61538464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4156ab344a6fa440800000000000000
+      internalID: 4949291356794540364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistolet_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 98
+        width: 33
+        height: 13
+      alignment: 9
+      pivot: {x: 0.09090909, y: 0.4615385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3efab02517f6cb30800000000000000
+      internalID: 4307401763741957694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistolet_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 82
+        width: 30
+        height: 13
+      alignment: 9
+      pivot: {x: 0.10000001, y: 0.61538464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf69535495a2cb50800000000000000
+      internalID: 6612029259405422506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistolet_3
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 82
+        width: 37
+        height: 13
+      alignment: 9
+      pivot: {x: 0.081081085, y: 0.4615385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f121c5a5b997d7540800000000000000
+      internalID: 5007292068848734751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistolet_4
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 83
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5db37ecf08bf1a00800000000000000
+      internalID: 729504042685021531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistolet_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 50
+        width: 30
+        height: 19
+      alignment: 9
+      pivot: {x: 0.10000001, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bcdc2d5f6a515b50800000000000000
+      internalID: 6580139964916096177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistolet_6
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 66
+        width: 39
+        height: 15
+      alignment: 9
+      pivot: {x: 0.07692308, y: 0.40000004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7067b88537fb4e0800000000000000
+      internalID: -1963724088376162385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistolet_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 50
+        width: 39
+        height: 14
+      alignment: 9
+      pivot: {x: 0.07692308, y: 0.42857146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7788eb4ce04c66920800000000000000
+      internalID: 2983287370888939639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistolet_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 34
+        width: 29
+        height: 15
+      alignment: 9
+      pivot: {x: 0.10344827, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1166fe9f57bde10800000000000000
+      internalID: 2223500557361222109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistolet_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 34
+        width: 33
+        height: 13
+      alignment: 9
+      pivot: {x: 0.09090909, y: 0.4615385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30fef536b2d44a120800000000000000
+      internalID: 2424147348178333443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistolet_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 17
+        width: 30
+        height: 13
+      alignment: 9
+      pivot: {x: 0.10000001, y: 0.61538464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3404ec90c91358d0800000000000000
+      internalID: -2858913023393528771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistolet_11
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 18
+        width: 33
+        height: 13
+      alignment: 9
+      pivot: {x: 0.09090909, y: 0.4615385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a331308a8dde210800000000000000
+      internalID: 1363984478280825357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistolet_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 30
+        height: 15
+      alignment: 9
+      pivot: {x: 0.10000001, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1268597042aa530800000000000000
+      internalID: 3866942845042958777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistolet_13
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 2
+        width: 33
+        height: 13
+      alignment: 9
+      pivot: {x: 0.09090909, y: 0.4615385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d4b48b2674976b0800000000000000
+      internalID: -5298124997300368026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

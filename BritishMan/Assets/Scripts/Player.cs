@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float speed;
+    public float speed, mind;
     public Joystick joystick, joystickShooting;
     public GameObject sprite, guns;
     public Transform flipPoint, flipPointMain, playerPos;
@@ -17,9 +17,6 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     bool IsDamagingMind;
-
-    [SerializeField]
-    float mind = 100;
 
     public void Start()
     {

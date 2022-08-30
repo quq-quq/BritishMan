@@ -6,14 +6,28 @@ public class EnemyActive : MonoBehaviour
 {
     public List<GameObject> enemies;
 
+    Player player;
+
     void Start()
     {
+        player = GameObject.Find("Player").GetComponent<Player>();
+
         float timer = GameObject.Find("Canvas").GetComponent<Generator>().timeStart;
-        if (timer <= 60)
-            Instantiate(enemies[Random.Range(0, 2)], transform.position, Quaternion.identity);
+
+        if(player.mind >= 50)
+        {
+            if (timer <= 60)
+                Instantiate(enemies[Random.Range(0, 2)], transform.position, Quaternion.identity);
+            else
+            {
+
+            }
+        }
         else
         {
 
         }
+
+
     }
 }

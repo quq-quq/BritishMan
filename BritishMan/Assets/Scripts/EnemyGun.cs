@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyGun : MonoBehaviour
 {
     public float startShotTime;
+    public bool isShotGun;
     public GameObject bullet;
     public Transform shotPoint;
 
@@ -37,7 +38,15 @@ public class EnemyGun : MonoBehaviour
 
     public void Shoot()
     {
-        Instantiate(bullet, shotPoint.position, shotPoint.rotation);
+        if (isShotGun)
+        {
+            for (int i = 0; i <4; i++)
+            {
+                Instantiate(bullet, shotPoint.position, shotPoint.rotation);
+            }
+        }
+        else
+            Instantiate(bullet, shotPoint.position, shotPoint.rotation);
         shotTime = startShotTime;
     }
 }

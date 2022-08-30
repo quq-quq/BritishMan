@@ -9,15 +9,12 @@ public class Enemy : MonoBehaviour
     public GameObject gun;
     
     GameObject player;     
-    Animator anim;
 
-    public enum TypeOfEnemy { knife , dummy };
+    public enum TypeOfEnemy { common , dummy};
     public TypeOfEnemy typeOfEnemy;
 
     void Start()
     {
-        if (typeOfEnemy != TypeOfEnemy.dummy)
-            anim = GetComponent<Animator>();
         player = GameObject.Find("Player");
     }
 
@@ -30,7 +27,6 @@ public class Enemy : MonoBehaviour
         if(typeOfEnemy != TypeOfEnemy.dummy)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-            anim.SetBool("IsKicking", true);
             Flip();
         }
     }

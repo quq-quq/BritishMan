@@ -18,8 +18,8 @@ public class Bullet : MonoBehaviour
 
     private void Start()
     {
-        Invoke("DestroyBullet", lifetime);
-        Invoke("EffectPlay", lifetime);
+        Invoke(nameof(EffectPlay), lifetime);
+        Destroy(gameObject, lifetime);
         transform.Rotate(transform.rotation.x, transform.rotation.y, Random.Range(rotateDown, rotateUp));
     }
 
@@ -46,16 +46,11 @@ public class Bullet : MonoBehaviour
                     Instantiate(effectsBlood, transform.position, Quaternion.identity);
                 }
 
-                DestroyBullet();
+                Destroy(gameObject);
             }
         }
         transform.Translate(Vector2.right * speed * Time.deltaTime);
 
-    }
-
-    public void DestroyBullet()
-    {         
-        Destroy(gameObject);
     }
 
     public void EffectPlay()
@@ -71,8 +66,8 @@ public class Bullet : MonoBehaviour
             if (collision.CompareTag("Player") && typeOfBullet == TypeOfBullet.close)
             {
                 collision.gameObject.GetComponent<Health>().TakeDamage(damage);
-                DestroyBullet();
                 Instantiate(effectsBlood, transform.position, Quaternion.identity);
+                Destroy(gameObject);
             }
         }
         else

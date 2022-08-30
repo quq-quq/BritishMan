@@ -131,7 +131,7 @@ MonoBehaviour:
   typeOfGun: 0
   startAmmo: 10
   startShotTime: 1
-  timeReload: 1.5
+  timeReload: 1.7
   close: 0
   bullet: {fileID: 563780907381186179, guid: 2d13aebda4e7411409a85b40fa1d6d92, type: 3}
   shotPoint: {fileID: 7493370966761630862}

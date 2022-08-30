@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2364052084879697008, guid: e28065de86cd32e4ca5a69a68aca4a67,
+  m_Sprite: {fileID: -7212647138620341736, guid: ae8e2a06838452e44a664445470d014b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -106,7 +106,6 @@ MonoBehaviour:
   isSolid:
     serializedVersion: 2
     m_Bits: 256
-  effects: {fileID: 5225819855836919496, guid: 7f6df036c8409f447bf3ee8a4f935673, type: 3}
   effectsBlood: {fileID: 5325932594953653404, guid: b9b491940390ca244830629e20888155,
     type: 3}
   dust: {fileID: 1261883371968192571, guid: 90a444b9b4fcafe4da856168824545fe, type: 3}
@@ -127,7 +126,7 @@ BoxCollider2D:
   m_Offset: {x: -0.23333335, y: -0.0333333}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.64705884, y: 0.47058827}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.1333333, y: 3.4}
     newSize: {x: 1.1333333, y: 3.4}
     adaptiveTilingThreshold: 0.5

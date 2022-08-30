@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Generator : MonoBehaviour
 {
     public List<GameObject> labirints;
-    public GameObject player, gas;
+    public GameObject gas;
     public Text textTimer;
 
 
