@@ -22,4 +22,17 @@ public class Dust : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<Health>().TakeDamage(2);
+        }
+
+        if (collision.CompareTag("Enemy"))
+        {
+            collision.gameObject.GetComponent<Enemy>().TakeDamage(2);
+        }
+    }
 }

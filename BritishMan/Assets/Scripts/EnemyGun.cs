@@ -6,6 +6,7 @@ public class EnemyGun : MonoBehaviour
 {
     public float startShotTime;
     public bool isShotGun;
+    public int howMuch;
     public GameObject bullet;
     public Transform shotPoint;
 
@@ -40,7 +41,7 @@ public class EnemyGun : MonoBehaviour
     {
         if (isShotGun)
         {
-            for (int i = 0; i <4; i++)
+            for (int i = 0; i < howMuch; i++)
             {
                 Instantiate(bullet, shotPoint.position, shotPoint.rotation);
             }

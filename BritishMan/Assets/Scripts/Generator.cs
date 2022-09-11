@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class Generator : MonoBehaviour
 {
@@ -49,5 +51,10 @@ public class Generator : MonoBehaviour
 
         timeStart += Time.deltaTime;
         textTimer.text = timeStart.ToString("F1");
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("SampleScene");
     }
 }

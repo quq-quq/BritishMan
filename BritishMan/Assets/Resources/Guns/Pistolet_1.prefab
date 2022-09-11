@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeOfGun: 1
   startAmmo: 6
-  startShotTime: 0.35
+  startShotTime: 0.5
   timeReload: 2
   close: 0
   bullet: {fileID: 960047389683399659, guid: 739020979169a7a479fabbb9fbb6f47a, type: 3}

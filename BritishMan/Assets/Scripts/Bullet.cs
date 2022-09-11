@@ -33,20 +33,22 @@ public class Bullet : MonoBehaviour
                 if (hitInfo.collider.gameObject.isStatic)
                 {
                     EffectPlay();
+                    Destroy(gameObject);
                 }
-                else if (hitInfo.collider.CompareTag("Enemy"))
+                
+                if (hitInfo.collider.CompareTag("Enemy") && !enemyBullet)
                 {
                     hitInfo.collider.GetComponent<Enemy>().TakeDamage(damage);
                     Instantiate(effectsBlood, transform.position, Quaternion.identity);
+                    Destroy(gameObject);
                 }
  
                 if (hitInfo.collider.CompareTag("Player") && enemyBullet)
                 {
                     hitInfo.collider.GetComponent<Health>().TakeDamage(damage);
                     Instantiate(effectsBlood, transform.position, Quaternion.identity);
+                    Destroy(gameObject);
                 }
-
-                Destroy(gameObject);
             }
         }
         transform.Translate(Vector2.right * speed * Time.deltaTime);

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 619522601879606083}
   - component: {fileID: 619522601879606080}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MP-18Enemy_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,9 +95,9 @@ GameObject:
   - component: {fileID: 619522601949257146}
   - component: {fileID: 619522601949257144}
   - component: {fileID: 619522601949257150}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MP-18Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -199,7 +199,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &619522602482956133
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 619522602482956138}
   - component: {fileID: 619522602482956136}
   - component: {fileID: 619522602482956139}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MP-18Enemy_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,6 +297,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startShotTime: 0.23
+  isShotGun: 0
+  howMuch: 0
   bullet: {fileID: 3161766312931895835, guid: a9620f66d86107e4c8dd1b2b12d05410, type: 3}
   shotPoint: {fileID: 619522603185134638}
 --- !u!1 &619522603185134633
@@ -308,7 +310,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 619522603185134638}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ShotPoint
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}

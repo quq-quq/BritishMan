@@ -1,22 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     public float speed, mind;
+    public bool isDying;
     public Joystick joystick, joystickShooting;
-    public GameObject sprite, guns;
+    public GameObject sprite, guns, pauseBut;
     public Transform flipPoint, flipPointMain, playerPos;
+    public Health legs, body, head;
+
+    public Image face;
+    public List<Sprite> varFace;
 
     float rotZ;  
     Rigidbody2D rb;
     Vector2 moveInput, pos, moveVelocity;
-    Animator anim;
     Camera main;
 
-    [SerializeField]
-    bool IsDamagingMind;
+    [HideInInspector]
+    public Animator anim;
 
     public void Start()
     {
@@ -48,6 +53,28 @@ public class Player : MonoBehaviour
 
         pos = main.WorldToScreenPoint(transform.position);
         Flip();
+
+        if(head.health > 0 && body.health > 0 && legs.health > 0)
+        {
+            isDying = false;
+        }
+
+        if(mind >= 66)
+        {
+            face.sprite = varFace[0];
+        }
+        else if(mind < 66 && mind > 33)
+        {
+            face.sprite = varFace[1];
+        }
+        else if(mind <= 33 && mind > 0)
+        {
+            face.sprite = varFace[2];
+        }
+        else
+        {
+            transform.GetChild(0).GetComponent<Health>().TakeDamage(3);
+        }
     }
 
     void FixedUpdate()
@@ -91,6 +118,11 @@ public class Player : MonoBehaviour
     {
         if (collision.CompareTag("Gas"))
             mind -= 5 * Time.deltaTime;
+    }
+
+    public void End()
+    {
+        GameObject.Find("SeeZone").GetComponent<Animator>().SetTrigger("END");
     }
 }
 

@@ -97,6 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startShotTime: 1
+  isShotGun: 0
+  howMuch: 0
   bullet: {fileID: 8316937248150364302, guid: 68535784eedf26949a53dbc0678e0636, type: 3}
   shotPoint: {fileID: 6655983652376025575}
 --- !u!1 &8238704655560463493
@@ -259,7 +261,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
