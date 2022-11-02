@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
-    public GameObject andOptions;
-    bool isOptions = false;
+    public GameObject andOptions, menu, avtorsTitle;
+    bool isOptions = false, isAvtors = false;
 
     public void Options()
     {
@@ -33,5 +33,23 @@ public class MenuScript : MonoBehaviour
     public void Lading()
     {
         SceneManager.LoadScene("SampleScene");
+    }
+
+    public void Avtors()
+    {
+        if (!isAvtors)
+        {
+            avtorsTitle.SetActive(true);
+            menu.SetActive(false);
+            isAvtors = true;
+        }
+
+        else
+        {
+            avtorsTitle.SetActive(false);
+            menu.SetActive(true);
+            isAvtors = false;
+        }
+           
     }
 }

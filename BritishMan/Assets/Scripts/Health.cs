@@ -39,7 +39,7 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage)
     {
         if (player.speed > 1 && health == 2)
-            player.speed -= 1;
+            player.speed -= player.speed * 0.15f;
         health -= damage;
         if (health <= 0 && !player.isDying)
         {
@@ -62,7 +62,7 @@ public class Health : MonoBehaviour
         if (health > 2)
             health = 2;
         if (player.speed < 4 && health == 2)
-            player.speed += 1;
+            player.speed += player.speed * 0.15f;
     }
 
     public IEnumerator Dead()

@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 
 public class Pause : MonoBehaviour
 {
-    public bool gamePaused = false, isReload = false;
+    public bool gamePaused = false, isReload = false, isOptions = false;
 
-    public GameObject PauseUi, PauseButton, moreButtons, cellContainer;
+    public GameObject PauseUi, PauseButton, moreButtons, cellContainer, PanelOptions;
     public Text smallBullet, bigBullet, shotGunBullet;
 
     public int smallInt, bigInt, shotInt;
@@ -54,4 +56,30 @@ public class Pause : MonoBehaviour
         }
 
     }
+
+    public void OptionsOpen()
+    {
+        if (!isOptions)
+        {
+            PanelOptions.SetActive(true);
+            isOptions = true;
+        }
+        else
+        {
+            PanelOptions.SetActive(false);
+            isOptions = false;
+        }
+    }
+
+    public void GoHome()
+    {
+        Time.timeScale = 1f;
+        gameObject.GetComponent<Animator>().SetTrigger("Exit");
+    }
+
+    public void Loading()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
 }
