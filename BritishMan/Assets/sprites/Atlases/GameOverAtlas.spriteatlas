@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GameOverAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: cf2f2deb4a59f0241984610fb74ba899, type: 3}
+    - {fileID: 2800000, guid: 62746b0784c840442937f3c1357f30e5, type: 3}
+    - {fileID: 2800000, guid: ff82a425a2943374299252cbf6a60182, type: 3}
+    - {fileID: 2800000, guid: 0b4208cc11d2e3e47bac7b3d8d8b302b, type: 3}
+    - {fileID: 2800000, guid: 027059ec8efdbd442b30efc9dc0eda04, type: 3}
+    - {fileID: 2800000, guid: 33ce543c3a97f9641a7d9f5d53bf4b45, type: 3}
+    - {fileID: 2800000, guid: 8ea86b60cf298334f99ae89771819bba, type: 3}
+    - {fileID: 2800000, guid: ee0522d520827034c87b291897fc371e, type: 3}
+    - {fileID: 2800000, guid: e239d8b4a7f8f46418eaef77e4f4db81, type: 3}
+    - {fileID: 2800000, guid: 29662507808ad6d4393f9ae7c646b7d5, type: 3}
+    - {fileID: 2800000, guid: 86a2ae66b1588ef4eb7075ce24cf7a44, type: 3}
+    - {fileID: 2800000, guid: fb8b22e0ee97e27408f67f2261dbccaa, type: 3}
+    - {fileID: 2800000, guid: 28f60295c0871304197c9c9e99843b03, type: 3}
+    - {fileID: 2800000, guid: ee4b6f2db30b2c947aedb1388f9ca222, type: 3}
+    - {fileID: 2800000, guid: f5f83f342b149aa4f81f1a6b83bac852, type: 3}
+    - {fileID: 2800000, guid: 9dfbeed775799144fbfc7e3243325125, type: 3}
+    - {fileID: 2800000, guid: d36a66892256440409781a7b7e67cf05, type: 3}
+    - {fileID: 2800000, guid: 4a59754617ba3b34bb6c018d5a577530, type: 3}
+    - {fileID: 2800000, guid: 9aff432e54e736e45a547820a705db95, type: 3}
+    - {fileID: 2800000, guid: 5e3dd71602ca596448ff518ddbccb590, type: 3}
+    - {fileID: 2800000, guid: 038d1de95960b6b4d96f19761ce33c88, type: 3}
+    - {fileID: 2800000, guid: f34337b63309f294a8621a4ad8d97484, type: 3}
+    - {fileID: 2800000, guid: 317b21c3444754d4d914f05425b7ebb0, type: 3}
+    - {fileID: 2800000, guid: ae28d651ccd80244bbc3441d8e0911bf, type: 3}
+    - {fileID: 2800000, guid: 3979f802b72f88e4a8639cb487ac5347, type: 3}
+    - {fileID: 2800000, guid: 6754f68dccbc41c4a81db9e351028d6d, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 8ea86b60cf298334f99ae89771819bba, type: 3}
+  - {fileID: 21300000, guid: fb8b22e0ee97e27408f67f2261dbccaa, type: 3}
+  - {fileID: 21300000, guid: ae28d651ccd80244bbc3441d8e0911bf, type: 3}
+  - {fileID: 21300000, guid: 3979f802b72f88e4a8639cb487ac5347, type: 3}
+  - {fileID: 21300000, guid: 317b21c3444754d4d914f05425b7ebb0, type: 3}
+  - {fileID: 21300000, guid: f5f83f342b149aa4f81f1a6b83bac852, type: 3}
+  - {fileID: 21300000, guid: e239d8b4a7f8f46418eaef77e4f4db81, type: 3}
+  - {fileID: 21300000, guid: ff82a425a2943374299252cbf6a60182, type: 3}
+  - {fileID: 21300000, guid: 28f60295c0871304197c9c9e99843b03, type: 3}
+  - {fileID: 21300000, guid: ee0522d520827034c87b291897fc371e, type: 3}
+  - {fileID: 21300000, guid: 5e3dd71602ca596448ff518ddbccb590, type: 3}
+  - {fileID: 21300000, guid: 4a59754617ba3b34bb6c018d5a577530, type: 3}
+  - {fileID: 21300000, guid: 86a2ae66b1588ef4eb7075ce24cf7a44, type: 3}
+  - {fileID: 21300000, guid: f34337b63309f294a8621a4ad8d97484, type: 3}
+  - {fileID: 21300000, guid: 29662507808ad6d4393f9ae7c646b7d5, type: 3}
+  - {fileID: 21300000, guid: 62746b0784c840442937f3c1357f30e5, type: 3}
+  - {fileID: 21300000, guid: 9dfbeed775799144fbfc7e3243325125, type: 3}
+  - {fileID: 21300000, guid: d36a66892256440409781a7b7e67cf05, type: 3}
+  - {fileID: 21300000, guid: 038d1de95960b6b4d96f19761ce33c88, type: 3}
+  - {fileID: 21300000, guid: cf2f2deb4a59f0241984610fb74ba899, type: 3}
+  - {fileID: 21300000, guid: 33ce543c3a97f9641a7d9f5d53bf4b45, type: 3}
+  - {fileID: 21300000, guid: 0b4208cc11d2e3e47bac7b3d8d8b302b, type: 3}
+  - {fileID: 21300000, guid: 027059ec8efdbd442b30efc9dc0eda04, type: 3}
+  - {fileID: 21300000, guid: ee4b6f2db30b2c947aedb1388f9ca222, type: 3}
+  - {fileID: 21300000, guid: 6754f68dccbc41c4a81db9e351028d6d, type: 3}
+  - {fileID: 21300000, guid: 9aff432e54e736e45a547820a705db95, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - GameOver7
+  - GameOver12
+  - GameOver24
+  - GameOver25
+  - GameOver23
+  - GameOver15
+  - GameOver9
+  - GameOver3
+  - GameOver13
+  - GameOver8
+  - GameOver20
+  - GameOver18
+  - GameOver11
+  - GameOver22
+  - GameOver10
+  - GameOver2
+  - GameOver16
+  - GameOver17
+  - GameOver21
+  - GameOver1
+  - GameOver6
+  - GameOver4
+  - GameOver5
+  - GameOver14
+  - GameOver26
+  - GameOver19
+  m_Tag: GameOverAtlas
+  m_IsVariant: 0

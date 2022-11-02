@@ -27,7 +27,7 @@ public class EnemyGun : MonoBehaviour
         float rotZ = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, rotZ);
 
-        if (shotTime <= 0)
+        if (shotTime <= 0 && player.transform.position.x < 20)
         {
             Shoot();
         }

@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public int health;
     public float speed;
-    public GameObject gun;
+    public GameObject gun, spawner;
     
     GameObject player;     
 
@@ -16,12 +16,15 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player");
+        Destroy(gameObject, 60);
     }
 
     void Update()
     {
         if (health <= 0)
         {
+            player.GetComponent<Player>().mind -= 5;
+            Instantiate(spawner);
             Destroy(gameObject);
         }
         if(typeOfEnemy != TypeOfEnemy.dummy)

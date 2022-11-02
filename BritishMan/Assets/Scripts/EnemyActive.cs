@@ -17,7 +17,7 @@ public class EnemyActive : MonoBehaviour
         if(player.mind >= 50)
         {
             if (timer <= 60)
-                Instantiate(enemies[Random.Range(0, 2)], transform.position, Quaternion.identity);
+                Instantiate(enemies[Random.Range(0, enemies.Count)], transform.position, Quaternion.identity);
             else
             {
 

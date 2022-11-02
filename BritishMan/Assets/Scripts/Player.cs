@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public Image face;
     public List<Sprite> varFace;
 
+    bool gassing;
     float rotZ;  
     Rigidbody2D rb;
     Vector2 moveInput, pos, moveVelocity;
@@ -22,6 +23,9 @@ public class Player : MonoBehaviour
 
     [HideInInspector]
     public Animator anim;
+
+    [HideInInspector]
+    public bool dead;
 
     public void Start()
     {
@@ -75,6 +79,11 @@ public class Player : MonoBehaviour
         {
             transform.GetChild(0).GetComponent<Health>().TakeDamage(3);
         }
+
+        if (!gassing && mind < 100)
+        {
+            mind += 0.3f * Time.deltaTime;
+        }
     }
 
     void FixedUpdate()
@@ -117,12 +126,24 @@ public class Player : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Gas"))
-            mind -= 5 * Time.deltaTime;
+        {
+            mind -= 0.7f * Time.deltaTime;
+            gassing = true;
+        }
+        gassing = false;
     }
 
     public void End()
     {
+        dead = true;
+        Invoke(nameof(EndScreen), 6f);
         GameObject.Find("SeeZone").GetComponent<Animator>().SetTrigger("END");
+
+    }
+
+    void EndScreen()
+    {
+        Time.timeScale = 0f;
     }
 }
 
